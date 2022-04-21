@@ -3,6 +3,7 @@ import {
   faInstagram,
   faTwitch,
   faYoutube,
+  faDiscord,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
@@ -13,9 +14,9 @@ import Flying from '../components/Flying';
 import Illustration from '../components/Illustration';
 import { breakpoints } from '../styles/theme';
 
-import { instagram, twitch, youtube, orari } from '../forestry/social.json';
+import { instagram, twitch, youtube, discord, orari } from '../forestry/social.json';
 
-library.add([faInstagram, faYoutube, faTwitch]);
+library.add([faInstagram, faYoutube, faTwitch, faDiscord]);
 
 const Container = styled(DefaultContainer)`
   display: flex;
@@ -77,8 +78,7 @@ const Social = () => {
       <img src={logo} alt="Beronz" />
 
       <Subtitle>
-        Live su <a href={twitch}>Twitch</a> {orari} + sorprese <i>quasi</i>{' '}
-        sempre preannunciate
+        Live su <a href={twitch}>Twitch</a> {orari} 
       </Subtitle>
 
       <Section>
@@ -91,6 +91,8 @@ const Social = () => {
         <a href={instagram}>
           <FontAwesomeIcon size="3x" icon={['fab', 'instagram']} />
         </a>
+        <a href={discord}>
+          <FontAwesomeIcon size="3x" icon={['fab', 'discord']} />
       </Section>
 
       <Flying>{words[word]}</Flying>
