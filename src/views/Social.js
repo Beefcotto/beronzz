@@ -78,7 +78,7 @@ const Social = () => {
       <img src={logo} alt="Beronz" />
 
       <Subtitle>
-        Live su <a href={twitch}>Twitch</a> {orari} <a href={https://opensea.io/collection/ennaranft}>OPENSEA</a>
+        Live su <a href={twitch}>Twitch</a> {orari} <a href="https://opensea.io/collection/ennaranft">OPENSEA</a>
       </Subtitle>
 
       <Section>
