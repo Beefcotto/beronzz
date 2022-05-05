@@ -94,7 +94,7 @@ const Social = () => {
         <a href={discord}>
           <FontAwesomeIcon size="3x" icon={['fab', 'discord']} />
       </Section>
-
+        </a>
       <Flying>{words[word]}</Flying>
       <Illustration />
     </Container>
