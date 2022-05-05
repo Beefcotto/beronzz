@@ -14,7 +14,7 @@ import Flying from '../components/Flying';
 import Illustration from '../components/Illustration';
 import { breakpoints } from '../styles/theme';
 
-import { instagram, twitch, youtube, discord, opensea, orari } from '../forestry/social.json';
+import { instagram, twitch, youtube, discord, orari } from '../forestry/social.json';
 
 library.add([faInstagram, faYoutube, faTwitch, faDiscord]);
 
