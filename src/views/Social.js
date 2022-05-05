@@ -4,6 +4,7 @@ import {
   faTwitch,
   faYoutube,
   faDiscord,
+  faOpenSea,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
@@ -14,9 +15,9 @@ import Flying from '../components/Flying';
 import Illustration from '../components/Illustration';
 import { breakpoints } from '../styles/theme';
 
-import { instagram, twitch, youtube, discord, orari } from '../forestry/social.json';
+import { instagram, twitch, youtube, discord, opensea, orari } from '../forestry/social.json';
 
-library.add([faInstagram, faYoutube, faTwitch, faDiscord]);
+library.add([faInstagram, faYoutube, faTwitch, faDiscord, faOpensea]);
 
 const Container = styled(DefaultContainer)`
   display: flex;
@@ -93,7 +94,10 @@ const Social = () => {
         </a>
         <a href={discord}>
           <FontAwesomeIcon size="3x" icon={['fab', 'discord']} />
-        </a>      
+        </a>
+        <a href={opensea}>
+          <FontAwesomeIcon size="3x" icon={['fab', 'opensea']} />
+        </a>
       </Section>
 
       <Flying>{words[word]}</Flying>
